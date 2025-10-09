@@ -1,0 +1,6 @@
+models:
+    - name: rides_with_multiple_passengers
+      description: Only show rides with multiple passengers
+      columns:
+          - name: passenger_count
+            description: Number of passengers involved in a ride
