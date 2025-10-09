@@ -1,0 +1,1 @@
+select * from {{ source("taxi_data","tlc_yellow_trips_2022") }}

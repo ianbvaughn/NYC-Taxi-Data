@@ -1,0 +1,5 @@
+data_tests:
+  - name: has_passenger_count_greater_than_1
+    description: >
+      The view `has_passenger_count_greater_than_1` should only display records with a passenger count greater than 1.
+      This test ensures that this is the case.
