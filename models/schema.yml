@@ -1,6 +1,14 @@
 models:
-    - name: rides_with_multiple_passengers
-      description: Only show rides with multiple passengers
-      columns:
-          - name: passenger_count
-            description: Number of passengers involved in a ride
+  - name: rides_with_multiple_passengers
+    description: Only show rides with multiple passengers
+    columns:
+        - name: passenger_count
+          description: Number of passengers involved in a ride
+snapshots:
+  - name: test_data_snapshot
+    description: Snapshot of test data
+    relation: source('test_data', 'SNAPSHOT_TEST')
+    config:
+      strategy: timestamp
+      updated_at: updated_at
+      unique_key: order_id

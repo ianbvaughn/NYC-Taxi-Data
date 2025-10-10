@@ -1,0 +1,1 @@
+select * from {{ source('test_data', 'SNAPSHOT_TEST') }}
