@@ -1,0 +1,8 @@
+snapshots:
+  - name: test_data_snapshot
+    description: Snapshot of test data
+    relation: source('test_data', 'SNAPSHOT_TEST')
+    config:
+      strategy: timestamp
+      updated_at: updated_at
+      unique_key: order_id
