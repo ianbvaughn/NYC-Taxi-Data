@@ -1,1 +1,1 @@
-select * from {{ source("taxi_data","tlc_yellow_trips_2022") }}
+{{ find_datatypes(ref('rides_with_multiple_passengers')) }}
