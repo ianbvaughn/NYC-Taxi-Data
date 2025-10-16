@@ -1,0 +1,9 @@
+exposures:
+  - name: sample_exposure
+    type: dashboard
+    url: url
+    description: This is a sample exposure
+    owner:
+      name: Ian Vaughn
+    depends_on:
+      - source('taxi_data','tlc_yellow_trips_2022')
